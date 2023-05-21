@@ -1,0 +1,72 @@
+\*{
+  margin:0;
+  background-color:rgb(252, 255, 221);
+} 
+/* *{
+  background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%),
+  linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+  linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+  radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
+  } */
+
+h1{
+  font-family: 'VT323', monospace;
+  font-size: 2rem;
+  text-shadow: 1px 1px red;
+}
+
+.logo-block{
+  align-items:center;
+  display: flex;
+}
+
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 800px;
+}
+
+.navbar .links{
+  font-family: 'VT323', monospace;
+
+  font-size: 1.5rem;
+  margin-left: auto;
+}
+
+.navlink{
+  padding-left:  5px;
+}
+
+.navbar a{
+  text-decoration: none;
+  margin: 0 10px;
+  color: rgb(81, 36, 144);
+}
+
+@media screen and (max-width:440px){
+  h1{
+    font-size: 2rem;
+  }
+
+  .navbar{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .links{
+    margin: auto;
+    padding-top: 5px;
+  }
+
+  .navbar-container{
+    padding-top: 3%;
+  }
+
+}
+

@@ -1,0 +1,113 @@
+*{
+  margin:0;
+}
+/* background-color:rgb(252, 255, 221); */
+
+
+.home{
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* .modal-content{
+    background-image: url("https://media.istockphoto.com/id/936394272/vector/natural-pattern-abstract-curve-shape-leaf-green-colour-background.jpg?s=612x612&w=0&k=20&c=1bBeapRNkXKDx3IQzt9mJIlnzY2XGroaRQePwC45GoA=");
+
+} */
+
+
+.modal-content .btn{
+  border: white;
+  background-color: rgb(81, 36, 144);
+}
+
+.category-btn{
+  font-family: 'VT323', monospace;
+  font-weight: bold;
+  color: rgb(81, 36, 144);
+  border: 1.5px #1864ab solid;
+  text-shadow: 0.5px 0.5px red;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.category-btn:hover{
+  background-color: rgb(81, 36, 144);
+  color:aliceblue;
+  transition: ease-in-out 0.2s;
+}
+
+.category-div{
+  display: flex;
+  justify-content:center;
+  padding-bottom: 2%;
+}
+
+
+.categories{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);    /* Means 3 columns 2 rows mei */
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+
+.active{
+  background-color: aquamarine;
+}
+
+.category-link{
+  border-radius: 10px;
+  margin-right: 5% ;
+  margin-bottom: 5%;
+  border: 1px #22277e solid;
+  /* transition:cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+.category-link:hover{
+  cursor: pointer;
+
+  box-shadow: 2.0px 4.0px 4.0px rgba(19, 83, 5, 0.568);
+
+}
+
+.category-link p{
+  margin: 0;
+}
+
+
+
+.img-div{
+  margin: 0 auto;
+}
+
+.meme{
+  width: 70vh;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:440px){
+  .meme{
+    width: 45vh;
+  }
+  .img-div{
+    padding-top: 5vh;
+  }
+
+  .category-div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+  .category-btn{
+    background-color: rgb(81, 36, 144);
+    color:aliceblue;
+  }
+}
+/*CHECK WHY CSS NOT APPLYING PROPERLY,
+  ALSO CHECK HOW TO FETCH AGAIN AND AGAIN ON EVERY RELOAD/PRESS OF A BUTTON */
